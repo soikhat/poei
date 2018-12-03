@@ -61,13 +61,7 @@
             "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
         ]
     },
-    "extra": {
-        "merge-plugin": {
-            "include": [
-                "modules/custom/test/composer.json"
-            ]
-
-        },
+    "extra":{
         "patchLevel": {
             "drupal/core": "-p2"
         },
