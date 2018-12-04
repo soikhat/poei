@@ -1,3 +1,30 @@
+#header{
+  background-color: #5C8696;
+  background-image: none;
+}
+#page{
+  background: #f4f3f3cc;
+
+}
 a{
   color:red;
+}
+.site-branding__name{
+  font-size: 4em;
+}
+.sidebar{
+  margin-top : 23px;
+
+}
+#main,#main-wrapper{
+  border:1px;
+  background-color:#e9e5e5;
+  border-radius: 10px;
+
+}
+.region_drupal8{
+  width:calc(50%);
+  margin:0 auto;
+  border:1px;
+  border-radius: 10px;
 }

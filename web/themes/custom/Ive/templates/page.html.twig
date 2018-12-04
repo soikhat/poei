@@ -107,6 +107,11 @@
         </aside>
       </div>
     {% endif %}
+    {% if page.Drupal8 %}
+      <div class="region_drupal8">
+          {{ page.Drupal8 }}
+      </div>
+    {% endif %}
     <footer class="site-footer">
       <div class="layout-container">
         {% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
