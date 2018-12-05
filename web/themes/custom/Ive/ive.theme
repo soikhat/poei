@@ -130,5 +130,5 @@ function ive_theme_suggestions_page_alter(array &$suggestions, array $variables)
   if(is_object ($node)) {
     $suggestions[] = 'page__nodetype__' . $node->bundle();
   }
-  //ksm($suggestions);
+  //ksm($suggestions) permet de voir ce qui yadans l'objet $suggestion;
 }
