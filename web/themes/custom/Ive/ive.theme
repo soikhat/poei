@@ -96,7 +96,7 @@ function ive_preprocess_block(&$variables) {
   if ($variables['plugin_id'] == 'system_branding_block') {
     $variables['attributes']['class'][] = 'clearfix';
   }
-
+//pour indiquer le chemin de notre site
   $variables['theme_path']= base_path().drupal_get_path('theme','ive');
 }
 
