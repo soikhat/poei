@@ -1,0 +1,35 @@
+Four_square:
+  label: 'four squares'
+  path: layouts/four-square
+  template: layout--foursquare
+  library: ive/four_square
+  category: 'ive'
+  defult_region: top_right
+  icon: four-square.png
+  regions:
+    top_right:
+      label: Top right
+    top_left:
+      label: Top left
+    bottom_right:
+      label: Bottom right
+    bottom_left:
+      label: Bottom left
+
+jquiery_ui_tabs:
+  label: 'jquery Ui Tabs'
+  path: layouts/jquery_ui_tabs
+  template: jquery_ui_tabs
+  library: ive/jquery_ui_tabs
+  category: 'ive'
+  defult_region: first_tab
+  icon: jquery.png
+  regions:
+    first_tab:
+      label: first tab
+    second_tab:
+      label: Second tab
+    third_tabs:
+      label: third tab
+    fourth_tab:
+      label: fourth tab
