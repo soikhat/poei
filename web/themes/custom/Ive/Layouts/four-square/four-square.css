@@ -1,8 +1,0 @@
-.square-layout{
-  display: flex;
-  flex-wrap: wrap;
-}
-.square {
-  flex:0 0 40%;
-
-}
