@@ -1,0 +1,67 @@
+<?php
+
+use Drupal\user\UserInterface;
+use Drupal\Core\Session\AccountInterface;
+
+  function hello_help($route_name, \Drupal\Core\Routing\RouteMatchInterface $route_match) {
+    switch ($route_name) {
+
+      // Main module help for the block module.
+      case 'help.page.hello':
+        return '<p>' . t('here is the hello module', [
+            ':blocks' => \Drupal::url('block.admin_display'),
+          ]) . '</p>';
+
+      // Help for another path in the block module.
+      case 'block.admin_display':
+        return '<p>' . t('This page provides a drag-and-drop interface for assigning a block to a region, and for controlling the order of blocks within regions.
+           Since not all themes implement the same regions, or display regions in the same way, blocks are positioned on a per-theme basis.
+            Remember that your changes will not be saved until you click the <em>Save blocks</em> button at the bottom of the page.') . '</p>';
+    }
+  }
+
+
+function hello_cron(){
+    drupal_set_message('hello cron');
+
+}
+
+/**
+ * Implements hook_user_login().
+ */
+
+function hello_user_login(UserInterface $account) {
+
+
+   $account-> getAccountName();
+
+  \Drupal::messenger()->addMessage(t('welcome dear %name!',['%name'=> $account->getAccountName()]));
+
+  \Drupal::database()->insert('hello_user_statistics')
+          ->fields([
+            'uid'=> $account->id(),
+            'time'=>REQUEST_TIME,
+            'action'=>1,
+          ])->execute();
+
+}
+function hello_user_logout(AccountInterface $account) {
+
+  \Drupal::database()->insert('hello_user_statistics')
+    ->fields([
+      'uid' => $account
+        ->id(),
+      'time' => REQUEST_TIME,
+      'action' => 0,
+    ])
+    ->execute();
+}
+
+function hello_user_delete( $account) {
+
+  \Drupal::database()->delete('hello_user_statistics')
+
+    ->condition('uid', $account
+      ->id())
+    ->execute();
+}
