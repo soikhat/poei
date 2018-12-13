@@ -1,0 +1,14 @@
+{
+  "name": "drupal/consonle_tests",
+  "type": "drupal-module",
+  "description": "Console testings.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/consonle_tests",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/consonle_tests",
+    "source": "http://cgit.drupalcode.org/consonle_tests"
+  },
+  "require": { }
+}

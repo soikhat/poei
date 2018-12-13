@@ -1,0 +1,9 @@
+
+consonle_tests.consonle_tests_controller_hello:
+  path: '/consonle-tests'
+  defaults:
+    _controller: '\Drupal\consonle_tests\Controller\ConsonleTestsController::hello'
+    _title: 'consonle test'
+  requirements:
+    _permission: 'access content'
+
