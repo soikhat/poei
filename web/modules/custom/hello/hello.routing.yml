@@ -1,0 +1,33 @@
+hello.hello:
+  path: '/hello/{param}'
+  defaults:
+    _title: 'Hello'
+    _controller: '\Drupal\hello\Controller\HelloController::content'
+    param: 'param'
+  requirements:
+    _access: 'TRUE'
+
+hello.json:
+  path: '/hello-json'
+  defaults:
+    _title: 'Hello JSON'
+    _controller: '\Drupal\hello\Controller\HelloController::json'
+  requirements:
+    _access: 'TRUE'
+
+hello.liste:
+  path: 'hello/liste-noeuds/{noeuds}'
+  defaults:
+    _title: 'liste noeuds'
+    _controller: '\Drupal\hello\Controller\ListeNoeudsController::content'
+    noeuds: ''
+  requirements:
+    _access: 'TRUE'
+
+hello.user:
+  path: '/user/{user}/statistics'
+  defaults:
+    _title: 'user statistics'
+    _controller: '\Drupal\hello\Controller\UserstatController::content'
+  requirements:
+    _access: 'TRUE'
