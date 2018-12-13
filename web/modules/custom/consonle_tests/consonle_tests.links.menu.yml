@@ -1,0 +1,4 @@
+consonle_tests.consonle_tests_controller_hello:
+  title: consonle tests
+  route_name: consonle_tests.consonle_tests_controller_hello
+  menu_name: main
