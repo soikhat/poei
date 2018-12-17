@@ -31,3 +31,11 @@ hello.user:
     _controller: '\Drupal\hello\Controller\UserstatController::content'
   requirements:
     _access: 'TRUE'
+
+hello.form:
+  path: '/hello-form'
+  defaults:
+    _title: 'Hello Calculate'
+    _form: '\Drupal\hello\Form\HelloForm'
+  requirements:
+    _access: 'TRUE'
