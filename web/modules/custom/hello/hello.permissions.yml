@@ -1,0 +1,7 @@
+access_hello:
+  title: 'Access hello'
+  description: 'permissions for session block'
+
+administer_hello:
+  title: 'Hello Access admin'
+  description: 'administer hello'

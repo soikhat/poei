@@ -135,7 +135,7 @@ class HelloForm extends FormBase{
     $form_state -> setRebuild();
     $form_state->addRebuildInfo('result',$result);
 
-
+    $hello_state = \Drupal::state()->set('hello_state',REQUEST_TIME);
 
   }
 

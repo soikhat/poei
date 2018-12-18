@@ -16,12 +16,16 @@ class UserstatController extends ControllerBase {
                                 ->execute();
 
     $result =[];
+    $count = 0;
 
     foreach ($query as $stats){
 
       $result [] = [$stats->action == '1'? $this->t('login'):$this->t('logout'),
         \Drupal::service('date.formatter')->format($stats->time)] ;
+
+      $count += $stats->action;
     }
+
 
     $stat =[
       '#theme'=>'table',
@@ -30,10 +34,18 @@ class UserstatController extends ControllerBase {
 
     ];
 
-    $message = t('You are on the statistics Page');
-    return ['#markup' =>$message,
 
-      $stat,
+    $message = [
+      '#theme'=>'hello',
+      '#user' =>$user,
+      '#count' => $count ,
+    ];
+
+    //$message = t('You are on the statistics Page');
+    return [
+
+      'message' =>$message,
+      'stats'=>$stat,
 
     ];
 
