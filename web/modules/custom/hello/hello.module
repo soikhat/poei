@@ -22,7 +22,18 @@ use Drupal\Core\Session\AccountInterface;
 
 
 function hello_cron(){
+
+    $purge_days_number =\Drupal::config('hello.settings')->get('purge_days_number');
     drupal_set_message('hello cron');
+    if($purge_days_number !='0'){
+        $nombre_suppression = \Drupal::database()
+          ->delete('hello_user_statistics')
+          ->condition('time', $purge_days_number*(24*3600), '<=')
+          ->execute();
+
+    }
+    \Drupal::messenger()
+    ->addMessage(t('@nombre_suppression records hase been deleted.',['@nombre_suppression'=> $purge_days_number]));
 
 }
 
@@ -64,4 +75,18 @@ function hello_user_delete( $account) {
     ->condition('uid', $account
       ->id())
     ->execute();
+}
+
+function hello_theme($existing,$type,$theme,$path){
+
+  return array(
+    'hello'=>array (
+      'template'=>'hello-user-connexion',
+      'variables'=>array('count'=> NULL,
+                          'user' => NULL,
+        ),
+    ),
+  );
+
+
 }

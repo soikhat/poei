@@ -54,3 +54,7 @@ function hello_update_8001(){//ajout du champ uid
   $schema = Database::getConnection()->schema();
   $schema ->addField('hello_user_statistics','uid',$field_spec);
 }
+function hello_uninstall() {
+
+  \Drupal::state()->delete('hello_state');
+}
