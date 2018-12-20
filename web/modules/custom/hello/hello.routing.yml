@@ -30,7 +30,7 @@ hello.user:
     _title: 'user statistics'
     _controller: '\Drupal\hello\Controller\UserstatController::content'
   requirements:
-    _access: 'TRUE'
+    _access_hello: '4'
 
 hello.form:
   path: '/hello-form'
