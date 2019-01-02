@@ -1,7 +1,12 @@
-uuid: ef500ef6-5da8-4648-8fb2-9099dd31862e
+uuid: 71b6ffaf-a844-4c5f-829e-7c36e3aa0829
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - consonle_tests
+    - image_effects
+_core:
+  default_config_hash: I8r42Pw3Y4e5LFwX-zwwTmD5tFUa0BzChflWh1OM4RM
 name: ive_wide
 label: 'ive wide'
 effects:
@@ -13,3 +18,14 @@ effects:
       width: 425
       height: null
       upscale: false
+  3e962b3f-5963-419a-98aa-0dd3d0102aef:
+    uuid: 3e962b3f-5963-419a-98aa-0dd3d0102aef
+    id: consonle_test_image_effect
+    weight: 2
+    data: {  }
+  27714c20-b015-4ae4-8ff3-fb64ef521e3c:
+    uuid: 27714c20-b015-4ae4-8ff3-fb64ef521e3c
+    id: image_effects_color_shift
+    weight: 3
+    data:
+      RGB: '#FFAEAE'

@@ -1,0 +1,6 @@
+purge_days_number: '3'
+_core:
+  default_config_hash: BWzMwWkoBgBeo2PpPwOtzp3T-33f9HBZV4xLtziff80
+user_statistics_roles:
+  administrator: administrator
+  authenticated: 0
