@@ -1,0 +1,20 @@
+uuid: 23fcf52c-5e01-401e-b00b-8211e39cb185
+langcode: en
+status: true
+dependencies:
+  module:
+    - consonle_tests
+  theme:
+    - ive
+id: consonletest
+theme: ive
+region: sidebar_second
+weight: 0
+provider: null
+plugin: consonle_test_block
+settings:
+  id: consonle_test_block
+  label: 'consonle test'
+  provider: consonle_tests
+  label_display: visible
+visibility: {  }

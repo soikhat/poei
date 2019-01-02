@@ -9,17 +9,18 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
     - node.type.article
-    - responsive_image.styles.image_article
   module:
     - comment
     - field_layout
-    - layout_discovery
-    - responsive_image
+    - image
+    - ive
     - text
     - user
+  theme:
+    - ive
 third_party_settings:
   field_layout:
-    id: layout_twocol
+    id: jquiery_ui_tabs
     settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
@@ -30,40 +31,40 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 2
-    region: first
+    weight: 3
+    region: second_tab
     settings: {  }
     third_party_settings: {  }
     label: hidden
   comment:
     type: comment_default
     weight: 4
-    region: first
+    region: third_tabs
     label: above
     settings:
       view_mode: default
       pager_id: 0
     third_party_settings: {  }
   field_image:
-    type: responsive_image
+    type: image
     weight: 0
-    region: first
+    region: first_tab
+    label: above
     settings:
-      responsive_image_style: image_article
-      image_link: content
+      image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    label: hidden
   field_tags:
     type: entity_reference_label
     weight: 1
-    region: first
+    region: first_tab
     label: above
     settings:
       link: true
     third_party_settings: {  }
   links:
-    weight: 3
-    region: first
+    weight: 2
+    region: first_tab
     settings: {  }
     third_party_settings: {  }
 hidden:

@@ -1,0 +1,25 @@
+uuid: 9aaa8dd2-3189-40de-a0c2-f0bd0be174a0
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f2069b36-f4d7-45c7-bb18-6be53e02ffbd'
+  module:
+    - block_content
+  theme:
+    - ive
+id: ive_bienvenue_2
+theme: ive
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:f2069b36-f4d7-45c7-bb18-6be53e02ffbd'
+settings:
+  id: 'block_content:f2069b36-f4d7-45c7-bb18-6be53e02ffbd'
+  label: Bienvenue
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
