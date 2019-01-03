@@ -1,0 +1,13 @@
+#nom du module
+name: Config_override
+#description du module
+descriptions: allow to override the site name
+#type
+type: module
+#version du core de drupal avec lequel le module est crée
+core: 8.x
+#version du module
+version: 8.x-1.0
+#groupe du module
+package: Trainning
+#config
