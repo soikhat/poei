@@ -1,0 +1,11 @@
+#!bin/bash
+drush sset system.maintenance_mode 1 
+git pull origin master
+composer install --no-dev
+drush cr
+drush csex -y
+drush cim -y
+drush cr
+drush sset system.maintenance_mode 0
+drush cr
+echo site is online.
