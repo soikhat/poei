@@ -13,6 +13,10 @@ drush cr
 drush updb
 drush cr
 
+#Mise à jour des schemas des types  d'entite
+drush entup
+drush cr
+
 #export de la config de prod
 drush csex prod -y
 
