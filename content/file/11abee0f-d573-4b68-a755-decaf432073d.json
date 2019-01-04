@@ -1,0 +1,97 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/file\/60?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/file\/document"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/file\/document\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "fid": [
+        {
+            "value": 60
+        }
+    ],
+    "uuid": [
+        {
+            "value": "11abee0f-d573-4b68-a755-decaf432073d"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "document"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/file\/document\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "0c31d15b-25f2-4472-bede-35ac59a54c8a"
+                    }
+                ]
+            }
+        ]
+    },
+    "filename": [
+        {
+            "value": "kFtOPyJHRy.txt"
+        }
+    ],
+    "uri": [
+        {
+            "value": "private:\/\/2019-01\/kFtOPyJHRy.txt",
+            "url": "\/system\/files\/2019-01\/kFtOPyJHRy.txt"
+        }
+    ],
+    "filemime": [
+        {
+            "value": "text\/plain"
+        }
+    ],
+    "filesize": [
+        {
+            "value": 789
+        }
+    ],
+    "status": [
+        {
+            "value": true
+        }
+    ],
+    "created": [
+        {
+            "value": "2019-01-04T13:06:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "changed": [
+        {
+            "value": "2019-01-04T13:06:01+00:00",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "data": [
+        {
+            "value": "SHVpYyBodW1vIGlsbHVtIGlyaXVyZSBuZXF1ZSBxdWlhIHNpbmd1bGFyaXMgdHVtIHZlbGl0LiBBcHBlbGxhdGlvIGluIGluaGliZW8gc2VjdW5kdW0gdWxjaXNjb3IgdmFsZGUgdmFsaWR1cyB5bW8uIEltcG9ydHVudXMgbm9iaXMgcGF0cmlhIHVzaXRhcy4KCkVyb3MgaWFjZW8gaW50ZXJkaWNvIGlyaXVyZSBtZXVzIG9kaW8gcm90byBzaW5vIHRlZ28gdmVyZW9yLiBBbnRlaGFiZW8gZmFjaWxpc2lzIGl1c3R1bSBuaWJoLiBBY3NpIGFkaXBpc2NpbmcgZGVjZXQgZGVmdWkgZGlnbmlzc2ltIGhlbmRyZXJpdCBpbXB1dG8gcXVpIHV4b3IgdmVuaWFtLiBHcmF2aXMgaWRlbyBpdXN0byBzaW5vIHVsY2lzY29yLgoKQWJpZ28gY29uc2VjdGV0dWVyIGNvbnNlcXVhdCBnZW5pdHVzIGlhY2VvIGlyaXVyZSBpdXN0dW0gc2luZ3VsYXJpcyB2aXJ0dXMuIEF0IGJlbmUgY29tbW92ZW8gZWxpdCBmYWNpbGlzaSBmYWNpbGlzaXMgaG9zIG5lbyBwZWN1cy4gQ29tbW9kbyBjb25zZXF1YXQgcGxhZ2Egc2FsdXRvLiBBY2N1bXNhbiBuYXR1IG5lcXVlIHBhdHJpYSB1bGxhbWNvcnBlci4gQW50ZWhhYmVvIGNvbnZlbnRpbyBlbmltIGVzc2UgaGFlcm8gbGVuaXMgcmVmZXJvLiBDdWkgZXQgZXUgc2Npc2NvIHZvbHV0cGF0LiBDb21pcyBkYW1udW0gZHVpcyBlbGlnbyBodWljIHBhbGEgcGVjdXMgcG5ldW0geW1vLiBBY2N1bXNhbiBnZW1pbm8gb2NjdXJvIHF1YWRydW0gcXVpZG5lIHJlZmVybyBzaW5ndWxhcmlzIHNpbm8uIEFiaWdvIGNhZWN1cyBoZW5kcmVyaXQgaXVzdHVtIG5pYmggdGluY2lkdW50LgoK"
+        }
+    ]
+}
