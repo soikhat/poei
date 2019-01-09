@@ -1,0 +1,32 @@
+uuid: 9c112408-2bf3-4bc7-9281-7393f0c4c984
+langcode: en
+status: true
+dependencies:
+  module:
+    - annonce
+    - file
+    - image
+_core:
+  default_config_hash: vMLg3Rq1kIUNEIkC54gnItgSwYHUX-CC4XTtj0aautw
+id: annonce.field_image
+field_name: field_image
+entity_type: annonce
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
