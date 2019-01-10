@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - block_date
     - hello
   theme:
     - ive
@@ -17,4 +18,11 @@ settings:
   label: 'Sessions actives'
   provider: hello
   label_display: visible
-visibility: {  }
+visibility:
+  date_condition:
+    id: date_condition
+    '': ''
+    negate: null
+    date_debut: '2019-01-01'
+    date_fin: '2019-01-31'
+    context_mapping: {  }
