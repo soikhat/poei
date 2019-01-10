@@ -28,3 +28,5 @@ visibility:
     'date debut': '2019-01-10'
     'date fin': '2019-01-10'
     context_mapping: {  }
+    date_debut: '2019-01-11'
+    date_fin: ''
